@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="lightmode navbar navbar-light bg-light justify-content-between ">
+        <a class="navbar-brand"></a>
+        <h1>It's pretty bright toggle dark mode --></h1>
+          <button onclick="switchDark()" class="btn btn-dark" type="submit">Dark Mode</button>
+      </nav>
+
+      <nav class="darkmode navbar navbar-dark bg-dark justify-content-between ">
+        <a class="navbar-brand"></a>
+        <h1>It's pretty dark toggle light mode --></h1>
+          <button onclick="switchLight()" class="btn btn-light" type="submit">Light Mode</button>
+      </nav>
+
+    <img class="imgbg darkmode" src="./assets/images/darkglow.png">
+    <img class="imgbg element darkmode" src="./assets/images/dark.png">
+    <img class="imgbg lightmode" src="./assets/images/light.png">
+    
+    <div class="sidenav">
+        <a href="#about">About</a>
+        <a href="#services">Companies</a>
+        <a href="#clients">Projects/Links</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div id="info">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        function switchDark(){
+            $(".darkmode").css({"display": "flex"})
+            $(".lightmode").css({"display": "none"})
+            $(".sidenav").css({"background-color" : "#111"})
+        }
+        function switchLight(){
+            $(".darkmode").css({"display": "none"})
+            $(".lightmode").css({"display": "flex"})
+            $(".sidenav").css({"background-color" : "white"})
+        }
+    </script>
+</body>
+</html>

@@ -1,69 +1,15 @@
-body {
-    background-image: url('../images/doodles.png');
-    background-color:#4aaaa5;
-}
-
-.color {
-    background-color: #4aaaa5;
-}
-
-.wrapcenter{
-    margin: auto;
-    position: relative;
-    left: 0;
-    right: 0;
-    background-color: white;
-    border-style: solid;
-    margin-top: 20px;
-    width: 960px;
-}
-
 p  {
-    color: #777777;
     line-height: 2;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 
-}
-
-#imgur{
-    margin: 0px 20px 10px 20px;
 }
 
 h1, h2, h3 {
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    font-size: 18px;
-    font-weight: bold;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bold;
+  color: black;
 }
-p  {
-    color: #777777;
-    line-height: 2;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-.imgtext {
-    background-color: #4aaaa5;
-    text-align: center;
-    
-  }
-.imgtextcolor{
-    color: white;
-    line-height: 2;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-.card-title{
-    margin-top: 90px;
-}
-@media screen and (max-width: 768px) {
-    .wrapcenter{
-        margin: auto;
-        position: relative;
-        left: 0;
-        right: 0;
-        background-color: white;
-        border-style: solid;
-        margin-top: 20px;
-        width: 500px;
-    }
-}
+
 
 .imgbg{
     background-repeat: no-repeat;
@@ -96,66 +42,7 @@ p  {
     }
   }
 
-.sidenav {
-  height: 100%;
-  width: 200px;
-  z-index: 1;
-  top: 0;
-  left: -100px;
-  background-color: white;
-  overflow-x: hidden;
-  padding-top: 20px;
-  position: fixed;
-  opacity: 90%;
-
-  padding-top: 50px;
-
-  -webkit-animation: slide 1s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 1s forwards;
-  animation-delay: 0s;
-  
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: black;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  
-  }
-
-
-  a {
-    position: relative;
-    left: -100px;
-    -webkit-animation: slide 1s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 1s forwards;
-    animation-delay: 0s;
-    opacity: 100%;
-}
-
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
-@keyframes slide {
-    100% { left: 0; }
-}
-
 button{
-  position: relative;
   font-size: 24px;
 }
 
@@ -164,7 +51,6 @@ button{
 }
 
 .lightmode{
-  display: flex;
   color: black;
 }
 .navbar{
@@ -172,50 +58,68 @@ button{
 }
 
 
+.nav-link{
+  font-weight: bold;
+}
 
+footer {
+  position: absolute;
+  bottom: 0;
+}
 
-/* The subnavigation menu */
-.subnav {
+#main{
+  position: relative;
+  margin-top: 20%;
   overflow: hidden;
-  
+  z-index: 3;
+  text-align: center;
 }
 
-/* Subnav button */
-.subnav .subnavbtn {
-  border: none;
-  outline: none;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
 
-  left: -100px;
 
-  -webkit-animation: slide 1s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 1s forwards;
-  animation-delay: 0s;
-}
-.subnav-content {
-  display: none;
-  left: 0;
-  width: 100%;
-  z-index: 1;
+/* Animations */
+.animate-reveal {
+  opacity: 0;
+  -webkit-animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+          animation: reveal 2s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
 }
 
-/* Style the subnav links */
-.subnav-content a {
-  text-decoration: none;
-  font-size: 16px;
-  margin-left: 10px;
+.animate-first {
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
 }
 
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  color: gray;
+.animate-second {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
-/* When you move the mouse over the subnav container, open the subnav content */
-/* .subnav:hover .subnav-content {
-  display: block;
-} */
+.animate-third {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}

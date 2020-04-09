@@ -1,9 +1,0 @@
-$("#karaoke").click(function(){
-    window.open('https://github.com/CaptWart/teamdbs'); 
-})
-$("#scheduler").click(function(){
-    window.open('https://github.com/CaptWart/HW5'); 
-})
-$("#weather").click(function(){
-    window.open('https://github.com/CaptWart/HW6'); 
-})

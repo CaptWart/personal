@@ -1,91 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/3431a14c2d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>David Chau</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light color">
-        <a class="navbar-brand float-left" href="#"></a>
-        <button class="wrapcenter navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span>          
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a class="nav-link " href="index.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-            </ul>
-        </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link " href="index.html">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolios</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            David Chau
-          </span>
-        </div>
-      </nav>
-      <div class="bd-highlight wrapcenter">
-        <h1>
-            About Me
-          </h1>
-          <hr>
-            <img class="float-left img-thumbnail" id="imgur" src="assets/images/headshot.jpg" alt="Awesome" width="15%">
-          <p class="float-left">From as long as I can remember I have been working. Raised by two immigrants from Vietnam I am one out of six children. I grew up in Philadelphia where my parents owned a corner store. 
-            Ever since I was able to do basic arithmitic I was working the cash register. As soon as I was strong enough to lift products, I was stocking shelves. Working at a such a young age has instilled a strong work ethic. I honestly can't imagine life not working. I am currently attendding UCF's Full Stack developer bootcamp. I will be updating this website as I learn more.
-          </p>  
-          <p>
-              Growing up I was always interested in computers and built my first computer when I was 15 after getting my first part time job at the local library. 
-              From there, I was an intern at the local Children's Hospital doing basic web design, tech support and student development. I used my intern experience to springboard myself into a position at Lockheed Martin as an IT Apprentice at the age of 16.
-              I have been climbing the IT Career ladder ever since. I now currently work at Fedex as a Linux System Administrator with hopes to become a developer in the near future.  
-              I am also founder of a startup named ADIGEE where we have streamlined the process for local businesses to cross advertise with each other.   
-          </p>
-          
-      </div>
+    <nav class="lightmode navbar navbar-expand-lg navbar-light bg-light justify-content-between ">
+        <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Companies
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://adigee.com/">ADIGEE</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Body By Framework (coming soon)</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Links/Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://github.com/CaptWart">Github</a>
+                  <a class="dropdown-item" href="assets/DavidChauResumev2.pdf">Resume</a>
 
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Projects</a>
+                  <a class="dropdown-item" href="https://bodybywawa.herokuapp.com/">Body By Wawa</a>
+                  <a class="dropdown-item" href="https://captwart.github.io/teamdbs/">Best Karaoke</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+      <nav class="darkmode navbar navbar-expand-lg navbar-dark bg-dark justify-content-between ">
+        <a class="navbar-brand"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Companies
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://adigee.com/">ADIGEE</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Body By Framework (coming soon)</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Links/Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="https://github.com/CaptWart">Github</a>
+                  <a class="dropdown-item" href="assets/DavidChauResumev2.pdf">Resume</a>
+
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item disabled" href="#">Projects</a>
+                  <a class="dropdown-item" href="https://bodybywawa.herokuapp.com/">Body By Wawa</a>
+                  <a class="dropdown-item" href="https://captwart.github.io/teamdbs/">Best Karaoke</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+    <img class="imgbg darkmode" src="./assets/images/darkglow.png">
+    <img class="imgbg element darkmode" src="./assets/images/dark.png">
+    <img class="imgbg lightmode" src="./assets/images/light.png">
+    <div id="main">
+        <h1 class="animate-reveal animate-first">I'm David Chau</h1>
+        <h2 class="animate-reveal animate-second">I do a lot of things</h2>
+        <h2 class="animate-reveal animate-third">Toggle darkmode</h2>
+        <button id="dark" onclick="switchDark()" class="btn btn-dark animate-third" type="submit">Dark Mode</button>
+        <button id="light" onclick="switchLight()" class="btn btn-light" type="submit" style="display: none;">Light Mode</button>
+
+    </div>
+    <footer>
+        © 2020 Copyright: David Chau
+    </footer>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.subnavbtn').on('click', function() {
+                let state = $(this.parentNode).children('.subnav-content').css('display');
+                console.log(state)
+                if (state == 'none'){
+                    $(this.parentNode).children('.subnav-content').css({"display": "block"});
+                }
+                else{
+                    $(this.parentNode).children('.subnav-content').css({"display": "none"});
+                }
+            });
+        });
+        function switchDark(){
+            $(".darkmode").css({"display": "flex", "color":"white"})
+            $(".lightmode").css({"display": "none"})
+            $(".sidenav:hover").css({"background-color" : "#111"})
+            $(".sidenav a").css({"color":"white"})
+            $(".subnavbtn").css({"color":"white"})
+            $("h1").css({"color":"white"})  
+            $("h2").css({"color":"white"})
+            $("#light").css({"display": "inline"})
+            $("#dark").css({"display": "none"})  
+        }
+        function switchLight(){
+            $(".darkmode").css({"display": "none"})
+            $(".lightmode").css({"display": "flex"})
+            $(".sidenav a").css({"color":"black"})
+            $(".subnavbtn").css({"color":"black"})
+            $("h1").css({"color":"black"})  
+            $("h2").css({"color":"black"})  
+            $("#light").css({"display": "none"})
+            $("#dark").css({"display": "inline"})  
+        }
+
+    </script>
 </body>
-<div class="bg-info fixed-bottom">
-  <footer class="page-footer font-small bg-dark pt-4 text-secondary">
-      <div class="container-fluid text-center text-md-left">
-      <div class="row">
-          <div class="col-md-6 mt-md-0 mt-3">
-          <h5 class="text-uppercase">My stuff is here</h5>
-          
-          </div>
-          <hr class="clearfix w-100 d-md-none pb-3">
-          <div class="col-md-3 mb-md-0 mb-3">
-          <h5 class="text-uppercase">Links</h5>
-          <ul class="list-unstyled">
-              <li>
-              <a href="https://github.com/CaptWart">Github</a>
-              </li>
-              <li>
-              <a href="assets/DavidChauResumev2.pdf">Resume</a>
-              </li>
-              <li>
-              <a href="linkedin.html">LinkedIn</a>
-              </li>
-          </ul>
-          </div>
-      </div>
-      </div>
-      <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright: David Chau
-      
-      </div>
-  </footer>
-</div>    
 </html>
